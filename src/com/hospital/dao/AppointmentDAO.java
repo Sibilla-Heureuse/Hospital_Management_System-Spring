@@ -1,7 +1,13 @@
 package com.hospital.dao;
-import com.hospital.database.DBConnection;
 
+import com.hospital.database.DBConnection;
+import com.hospital.model.Appointment;
+
+import java.sql.Connection;
 import java.sql.PreparedStatement;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class AppointmentDAO {
